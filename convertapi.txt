@@ -1,0 +1,5 @@
+---ConvertAPI Authentication---
+
+API Secret: Uhy0MidCpF8ZmoUT
+
+API Key: 184150058
