@@ -23,6 +23,11 @@ func main() {
 	doc, err := html.Parse(strings.NewReader(text))
 	logError(err)
 	fmt.Println(doc.Type)
+/*	fmt.Println(html.DocumentNode)
+	fmt.Println(html.TextNode)
+	fmt.Println(html.ElementNode)
+	fmt.Println(html.ErrorNode)
+*/
 }
 
 func logError(err error) {
