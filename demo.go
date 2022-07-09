@@ -18,20 +18,32 @@ func main() {
 	pagetext, err := ioutil.ReadAll(page.Body)
 	logError(err)
 	page.Body.Close()
+	err = ioutil.WriteFile("webpage.html", pagetext, 0644)
+	logError(err)
 	text := string(pagetext)
 
 	doc, err := html.Parse(strings.NewReader(text))
 	logError(err)
-	fmt.Println(doc.Type)
-/*	fmt.Println(html.DocumentNode)
-	fmt.Println(html.TextNode)
-	fmt.Println(html.ElementNode)
-	fmt.Println(html.ErrorNode)
-*/
+/*	fmt.Println(doc.Type)
+	fmt.Println(doc.Attr)
+	fmt.Println(doc.Data)
+	fmt.Println(doc.FirstChild)
+	fmt.Println(doc.NextSibling)*/
+	procNode(doc)
+
 }
 
 func logError(err error) {
 	if err != nil {
 		log.Fatal("Error encountered!")
+	}
+}
+
+func procNode(node *html.Node) {
+	if node.Type == html.TextNode {
+		fmt.Println("-->", node.Data)
+	}
+	for i := node.FirstChild; i != nil; i = i.NextSibling {
+		procNode(i)
 	}
 }
