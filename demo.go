@@ -43,6 +43,7 @@ func procNode(node *html.Node) {
 	if node.Type == html.TextNode {
 		fmt.Println("-->", node.Data)
 	}
+	//fmt.Println(node.Type)
 	for i := node.FirstChild; i != nil; i = i.NextSibling {
 		procNode(i)
 	}
