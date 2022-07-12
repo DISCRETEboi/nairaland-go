@@ -21,7 +21,7 @@ func main() {
 	logError(err)
 	pagetext, err := ioutil.ReadAll(page.Body)
 	logError(err)
-	page.Body.Close()
+	defer page.Body.Close()
 	err = ioutil.WriteFile("webpage.html", pagetext, 0644)
 	logError(err)
 	//text := string(pagetext)
@@ -37,6 +37,7 @@ func main() {
 		if tokenType == html.ErrorToken {
         	err := tokenizer.Err()
         	if err == io.EOF {
+        		fmt.Println("end")
             	break
         	}
         	log.Fatalf("error tokenizing HTML: %v", tokenizer.Err())
