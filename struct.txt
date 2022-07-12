@@ -1,0 +1,2639 @@
+
+C:\DISCRETEfold_1\GOprog\nairaland-go>CD C:\DISCRETEfold_1\GOprog\nairaland-go
+
+C:\DISCRETEfold_1\GOprog\nairaland-go>go run demo.go
+Enter the link to process:
+Level 1
+Level 2
+Level 2
+E> html
+Level 3
+E> head
+Level 4
+E> title
+Level 5
+T> Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers - Education - Nigeria
+Level 4
+E> meta
+Level 4
+E> link
+Level 4
+E> meta
+Level 4
+E> link
+Level 4
+E> link
+Level 4
+E> link
+Level 3
+E> body
+Level 4
+E> div
+Level 5
+E> table
+Level 6
+E> tbody
+Level 7
+E> tr
+Level 8
+E> td
+Level 9
+E> h1
+Level 10
+E> a
+Level 11
+E> img
+Level 9
+T>  Welcome,
+Level 9
+E> b
+Level 10
+T> Guest
+Level 9
+T> :
+Level 9
+E> a
+Level 10
+T> Join Nairaland
+Level 9
+T>  /
+Level 9
+E> b
+Level 10
+E> a
+Level 11
+T> LOGIN!
+Level 9
+T>  /
+Level 9
+E> a
+Level 10
+T> Trending
+Level 9
+T>  /
+Level 9
+E> a
+Level 10
+T> Recent
+Level 9
+T>  /
+Level 9
+E> a
+Level 10
+T> New
+Level 9
+E> br
+Level 9
+E> b
+Level 10
+T> Stats:
+Level 9
+T> 2,892,488 members, 6,959,034 topics.
+Level 9
+E> b
+Level 10
+T> Date
+Level 9
+T> : Tuesday, 12 July 2022 at 01:53 AM
+Level 9
+E> p
+Level 9
+E> form
+Level 10
+T>
+Level 10
+E> input
+Level 10
+T>
+
+Level 10
+E> input
+Level 9
+T>
+Level 5
+E> a
+Level 5
+E> h2
+Level 6
+T> Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers - Education - Nairaland
+Level 5
+E> p
+Level 6
+E> a
+Level 7
+T> Nairaland Forum
+Level 6
+T>  /
+Level 6
+E> a
+Level 7
+T> Nairaland / General
+Level 6
+T>  /
+Level 6
+E> a
+Level 7
+T> Education
+Level 6
+T>   /
+Level 6
+E> a
+Level 7
+T> Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 6
+T>  (33897 Views)
+Level 5
+E> p
+Level 6
+T>
+Level 6
+E> a
+Level 7
+T> FG Breaks ASUU’s Rank, Set To Release Withheld Salaries Of Medical Lecturers ...
+Level 6
+T>   /
+Level 6
+E> a
+Level 7
+T> No Resumption Until FG Pays Withheld Salaries – ASUU
+Level 6
+T>   /
+Level 6
+E> a
+Level 7
+T> IPPIS: Buhari Approves Payment Of February, March Salaries Of Varsity Lecturers
+Level 6
+T>
+Level 6
+E> a
+Level 7
+T> (2)
+Level 6
+T>
+Level 6
+E> a
+Level 7
+T> (3)
+Level 6
+T>
+Level 6
+E> a
+Level 7
+T> (4)
+Level 6
+T>
+Level 5
+E> div
+Level 6
+E> a
+Level 7
+E> img
+Level 6
+E> a
+Level 7
+E> img
+Level 6
+E> a
+Level 7
+E> img
+Level 5
+E> p
+Level 6
+E> b
+Level 7
+T> (1)
+Level 6
+T>
+Level 6
+E> a
+Level 7
+T> (2)
+Level 6
+T>
+Level 6
+E> a
+Level 7
+T> (3)
+Level 6
+T>
+Level 6
+E> a
+Level 7
+T> (4)
+Level 6
+T>   (
+Level 6
+E> a
+Level 7
+E> b
+Level 8
+T> Reply
+Level 6
+T> )
+Level 6
+E> span
+Level 7
+T> (
+Level 7
+E> a
+Level 8
+E> b
+Level 9
+T> Go Down
+Level 7
+T> )
+Level 5
+E> p
+Level 6
+E> table
+Level 7
+E> tbody
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> khingTony
+Level 10
+T> (
+Level 10
+E> span
+Level 11
+T> m
+Level 10
+T> ):
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 10:29am
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+E> blockquote
+Level 12
+E> b
+Level 13
+T> THE Federal Government has started processing the withheld salaries of some medical lecturers in various federal universities who opted out of the ongoing strike by the Academic Staff Union of Universities, ASUU.
+Level 12
+E> br
+Level 12
+E> br
+Level 12
+T> The development is sequel to a letter by the medical lecturers, under the aegis of Medical and Dental Consultants Association, MDCAN, to the Ministers of Education, Labour and Employment, and Finance, Budget and National Planning, requesting for the payment of their withheld March-June, 2022 salaries.
+Level 12
+E> br
+Level 12
+E> br
+Level 12
+E> b
+Level 13
+T> The affected lecturers are from University of Maiduguri Teaching Hospital, UMTH, Abubakar Tafawa Balewa Teaching Hospital, ATBUTH, and the Usman Danfodiyo Teaching Hospital, UDUTH.
+Level 12
+E> br
+Level 12
+E> br
+Level 12
+T> A top official of the Federal Ministry of Finance, Budget and Planning who preferred anonymity, confirmed to our correspondent that approval had been granted for payment of the lecturers.
+Level 12
+E> br
+Level 12
+E> br
+Level 12
+T> According to the source,
+Level 12
+E> b
+Level 13
+T> the approval was granted because the medical lecturers harkened to plea by the Federal Government and well-meaning Nigerians for ASUU to stay on duty while negotiating with the Federal Government.
+Level 12
+E> br
+Level 12
+E> br
+Level 12
+T> The source said:
+Level 12
+E> b
+Level 13
+T> “We are processing the payment as approved by the Minister of Finance, Budget and National Planning. Our target is to get the salaries paid immediately workers return from Sallah holiday.”
+Level 12
+E> br
+Level 12
+E> br
+Level 12
+T> Meanwhile,
+Level 12
+E> b
+Level 13
+T> more medical lecturers have defied the ongoing ASUU strike to resume work in their various universities.
+Level 12
+E> br
+Level 12
+E> br
+Level 12
+T> A new letter by the MDCAN, ATBUTH chapter to the Minister of Labour and Employment, Senator Chris Ngige, indicated that
+Level 12
+E> b
+Level 13
+T> some clinical lecturers have been working throughout the period of the strike.
+Level 12
+T>  The letter entitled,
+Level 12
+E> b
+Level 13
+T> “Request for Payment of Withheld Salaries,”
+Level 12
+T>  was signed by the Chairman of MDCAN ATBUTH, Dr Yakubu B. Sharma and Secretary, Dr Rufai A. Dachi.
+Level 12
+E> br
+Level 12
+E> br
+Level 12
+T> It reads:
+Level 12
+E> b
+Level 13
+E> i
+Level 14
+T> “We hereby write to humbly request for the payment of withheld salaries of our members from March 2022 to June 22. These members are clinical lecturers who have been working throughout the period of the ongoing ASUU strike.
+Level 14
+E> br
+Level 14
+E> br
+Level 14
+T> “Kindly find attached the list of the affected staff with their details duly endorsed by the Provost, College of Medical Sciences, ATBU Bauchi and the Vice Chancellor of the University.”
+Level 12
+E> br
+Level 12
+E> br
+Level 12
+T> Although our correspondent could not reach the Minister of Labour and Employment, Senator Chris Ngige by the time of filing this report, a source in his Ministry confirmed the report.
+Level 12
+E> br
+Level 12
+E> br
+Level 12
+T> On the ongoing strike, our source in the presidency where the report of Prof. Nimi Briggs Committee awaits the decision of the President, said no fewer than four of the issues in dispute had been fully thrashed out, while the two outstanding matters of payment platform and renegotiation- were being tackled.
+Level 12
+E> br
+Level 12
+E> br
+Level 12
+T> “The striking lecturers received the Minimum Wage Consequential Adjustment arrears in May. The issue of visitation panels to the universities has been laid to rest, same with the Earned Academic Allowances/Earned Allowances.
+Level 12
+E> br
+Level 12
+E> br
+Level 12
+T> “Work has been accelerated on the testing of the payment platforms by NITDA and the renegotiation of the conditions of service, especially the increase of salaries and allowances. Government is doing its best . However, the truth is that the economy is in dire straits.”
+Level 12
+E> br
+Level 12
+E> br
+Level 12
+T> He noted that the economy of many countries was facing severe challenges, citing neighbouring Ghana where University Teachers Association embarked on strike for just one week and resumed immediately to commence negotiation with their government. He added that some lecturers had confided in the presidency that if government could make reasonable adjustment in their salaries , most of them would return to work.
+Level 12
+E> br
+Level 12
+E> br
+Level 12
+T> He said after all, there were other academics in the polytechnics with Ph.D. and Masters degree who receive less.
+Level 12
+E> br
+Level 11
+E> br
+Level 11
+T> Source:
+Level 11
+E> a
+Level 12
+T> https://www.vanguardngr.com/2022/07/strike-fg-breaks-asuus-rank-plans-to-release-withheld-salaries-of-medical-lecturers/amp/
+Level 10
+E> p
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T> 3 Likes
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T>  2 Shares
+Level 10
+E> p
+Level 11
+E> img
+Level 11
+T>
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> khingTony
+Level 10
+T> (
+Level 10
+E> span
+Level 11
+T> m
+Level 10
+T> ):
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 10:32am
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+T> Division being created.
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> Despite what the ASUU president said, that the federal government cannot blackmail them with hunger, it's going to happen if this strike lingers for long. Some of The affected lectures would want to go back to the classroom to continue their jobs so that they can be paid.
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> Divisions and branches of ASUU are going to rebel against their leadership soon because e don choke some lecturers oh
+Level 10
+E> p
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T> 88 Likes
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T>  10 Shares
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> Seniorwriter
+Level 10
+T> (
+Level 10
+E> span
+Level 11
+T> m
+Level 10
+T> ):
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 10:40am
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+T> Revealing..
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> This present buhari maladministration of bloodsucking cronies has taken the bar to all high in wickedness!.
+Level 11
+E> br
+Level 11
+T> I suspect he owns that NL moniker verywickedman....
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+E> b
+Level 12
+T> We need vote into all leadership positions young visionary leaders come 2023 and most importantly vote out both APC & PDP alike
+Level 11
+T> .
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> @Seniorwriter
+Level 10
+E> p
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T> 35 Likes
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T>  4 Shares
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> rant19ade
+Level 10
+T> :
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 12:35pm
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+T> Not cool from those set of medical lecturers, they want to undermine the fight with this move.
+Level 10
+E> p
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T> 22 Likes
+Level 11
+T>
+Level 11
+E> b
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> yomi961
+Level 10
+T> :
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 2:05pm
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+T> The demonic party strikes again.
+Level 11
+E> br
+Level 11
+T> Atiku abubakar is the answer to get Nigeria from the bottomless pit we are in .
+Level 11
+E> br
+Level 11
+T> Let us obidently atikulate for a better Nigeria,
+Level 11
+E> br
+Level 11
+T> Than vote for a boy's scout.
+Level 10
+E> p
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T> 12 Likes
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T>  11 Shares
+Level 10
+E> p
+Level 11
+E> img
+Level 11
+T>
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> UptownVibes
+Level 10
+T> (
+Level 10
+E> span
+Level 11
+T> m
+Level 10
+T> ):
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 2:55pm
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+E> blockquote
+Level 12
+E> a
+Level 13
+E> b
+Level 14
+T> yomi961
+Level 12
+T> :
+Level 12
+E> br
+Level 12
+T> The demonic party strikes again.
+Level 12
+E> br
+Level 12
+T> Atiku abubakar is the answer to get Nigeria from the bottomless pit we are in .
+Level 12
+E> br
+Level 12
+T> Let us obidently atikulate for a better Nigeria,
+Level 12
+E> br
+Level 12
+T> Than vote for a boy's scout.
+Level 11
+T> Let me not believe that,1961 is your year of birth sir?
+Level 10
+E> p
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T> 47 Likes
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T>  7 Shares
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> Dvdpity
+Level 10
+T> :
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 8:17pm
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+T> This is because they are earning from two sides. They earn salaries from the teaching hospitals and Also from the university system.
+Level 10
+E> p
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T> 7 Likes
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T>  1 Share
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> Subsidywise20
+Level 10
+T> :
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 9:11pm
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+T> The game is afoot.
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> Pandev
+Level 10
+T> (
+Level 10
+E> span
+Level 11
+T> m
+Level 10
+T> ):
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 9:11pm
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+T> nawa oh
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> Subsidywise20
+Level 10
+T> :
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 9:12pm
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+E> blockquote
+Level 12
+E> a
+Level 13
+E> b
+Level 14
+T> Dvdpity
+Level 12
+T> :
+Level 12
+E> br
+Level 12
+T> This is because they are earning from two sides. They earn salaries from the teaching hospitals and Also from the university system.
+Level 11
+E> br
+Level 11
+T> No, because strikes affect clinical students in medical school badly.
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> An average university student is affected by ASUU strike. An average medical student is affected by ASUU, NMA, NARD, JOHESU strikes....to say nothing of SSANU and NASU strikes ...which means that they end up spending longer in school
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> Hence the strike breaking. It is either that, or six year course will reach ten years...or more.
+Level 10
+E> p
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T> 32 Likes
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T>  5 Shares
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> OgaTheTop2
+Level 10
+T> :
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 9:12pm
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+T> What right thinking person in Nigeria would want to vote APC or PDP? Una suffering never do?
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> Education wahala...you still wan vote Tinubu or Atiku.
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> You dey live inside canoe you still wan vote Tinubu, Atiku.
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> You no get money buy fuel for your jalopy generator....you still wan vote Tinubu, Atiku.
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> Security wahala....you still wan vote APC., PDP.
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> Suffering from morning till night, 24/7.....Una still wan vote Tinubu, Atiku.
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> When will Nigerians enjoy heaven on earth
+Level 11
+E> img
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> Wake up fellow Nigerians, let's get it right.
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> Vote the right candidates....vote the right party!
+Level 10
+E> p
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T> 41 Likes
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T>  2 Shares
+Level 10
+E> p
+Level 11
+E> img
+Level 11
+T>
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> inoki247
+Level 10
+T> :
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 9:13pm
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+T> We know say this Govt no like education before Govt of forgery..
+Level 10
+E> p
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T> 2 Likes
+Level 11
+T>
+Level 11
+E> b
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> Iamdbull
+Level 10
+T> :
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 9:13pm
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+T> Dbull on this one!!!
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> Make university open back ooo have not been getting shows on campus and it's not helping my half dead career
+Level 10
+E> p
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T> 4 Likes
+Level 11
+T>
+Level 11
+E> b
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> Dozie32
+Level 10
+T> (
+Level 10
+E> span
+Level 11
+T> m
+Level 10
+T> ):
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 9:13pm
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+T> Mad people.
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> valentineuwakwe
+Level 10
+T> (
+Level 10
+E> span
+Level 11
+T> m
+Level 10
+T> ):
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 9:13pm
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+T> I dont even understand what this govt are up to....breaking ASUU ranks or trying to split them into northern ASUU and southern ASUU by processing payment for only medical workers in schools in the North....
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> i just cant wait till 2023!
+Level 10
+E> p
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T> 17 Likes
+Level 11
+T>
+Level 11
+E> b
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> princeade86
+Level 10
+T> (
+Level 10
+E> span
+Level 11
+T> m
+Level 10
+T> ):
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 9:14pm
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+T> Hmmm
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> Danielbrave08
+Level 10
+T> (
+Level 10
+E> span
+Level 11
+T> m
+Level 10
+T> ):
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 9:14pm
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+T> Psquare outshines Davido, Burna boy, wizkid after concert shutdown with incredible performance(Ranked No 1)
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> Watch video below
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T>
+Level 11
+E> iframe
+Level 11
+E> br
+Level 11
+E> a
+Level 12
+T> https://www.youtube.com/watch?v=4j8FlWjhRyE
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> Jokerman
+Level 10
+T> (
+Level 10
+E> span
+Level 11
+T> m
+Level 10
+T> ):
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 9:15pm
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+T> Lol... Northern lecturers.
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> They must always lean towards tribalism and religion.
+Level 11
+E> img
+Level 10
+E> p
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T> 6 Likes
+Level 11
+T>
+Level 11
+E> b
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> DevilSignature
+Level 10
+T> :
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 9:15pm
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+E> img
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> It's alright
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> kenedy175
+Level 10
+T> (
+Level 10
+E> span
+Level 11
+T> m
+Level 10
+T> ):
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 9:15pm
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+T> It has always been the way of this government,  divide and rule.
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> No wonder Nigeria has never been this divided until APC came and Buhari came in
+Level 10
+E> p
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T> 3 Likes
+Level 11
+T>
+Level 11
+E> b
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> Subsidywise20
+Level 10
+T> :
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 9:15pm
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+E> blockquote
+Level 12
+E> a
+Level 13
+E> b
+Level 14
+T> valentineuwakwe
+Level 12
+T> :
+Level 12
+E> br
+Level 12
+T> I dont even understand what this govt are up to....breaking ASUU ranks or trying to split them into northern ASUU and southern ASUU by processing payment for only medical workers in schools in the North....
+Level 12
+E> br
+Level 12
+E> br
+Level 12
+T> i just cant wait till 2023!
+Level 11
+E> br
+Level 11
+T> No, just the lecturers that are teaching. Every other Northern lecturer on strike is not being paid.
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> I expect that if medical lecturers in southern schools were teaching..they would get paid too...
+Level 10
+E> p
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T> 4 Likes
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T>  1 Share
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> Tb222
+Level 10
+T> (
+Level 10
+E> span
+Level 11
+T> m
+Level 10
+T> ):
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 9:15pm
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+T> .
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> Ademola47
+Level 10
+T> (
+Level 10
+E> span
+Level 11
+T> m
+Level 10
+T> ):
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 9:16pm
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+T> Ok
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> kenedy175
+Level 10
+T> (
+Level 10
+E> span
+Level 11
+T> m
+Level 10
+T> ):
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 9:16pm
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+T> Well, medical school is quite different from other courses.
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> They run a different calender from that of the university.
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> Students are usually involved in learning clinical skills in the hospital and also doing the theoretical aspect in class.
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> So even when universities go on strike, almost always, medical school still functions
+Level 10
+E> p
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T> 1 Like
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T>  1 Share
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> Subsidywise20
+Level 10
+T> :
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 9:16pm
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+E> blockquote
+Level 12
+E> a
+Level 13
+E> b
+Level 14
+T> Jokerman
+Level 12
+T> :
+Level 12
+E> br
+Level 12
+T> Lol... Northern lecturers.
+Level 12
+E> br
+Level 12
+E> br
+Level 12
+T> They must always lean towards tribalism and religion.
+Level 12
+E> img
+Level 11
+E> br
+Level 11
+T> Nope, most Northern lecturers are on strike.
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> The ones not on strike are in a medical school..one medical school....and they are not on strike because if they go on strike, some medical students may end up spending ten years for a 6 year course.
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> Modified
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> The report even indicates more medical lecturers may be on their way back. That is easily explained. ASUU strike is not the only strike affecting medical schools.
+Level 10
+E> p
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T> 3 Likes
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T>  1 Share
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> Voiceofthestree
+Level 10
+T> :
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 9:16pm
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+E> blockquote
+Level 12
+E> a
+Level 13
+E> b
+Level 14
+T> yomi961
+Level 12
+T> :
+Level 12
+E> br
+Level 12
+T> The demonic party strikes again.
+Level 12
+E> br
+Level 12
+T> Atiku abubakar is the answer to get Nigeria from the bottomless pit we are in .
+Level 12
+E> br
+Level 12
+T> Let us obidently atikulate for a better Nigeria,
+Level 12
+E> br
+Level 12
+T> Than vote for a boy's scout.
+Level 11
+E> br
+Level 11
+T> God go punish you
+Level 10
+E> p
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T> 2 Likes
+Level 11
+T>
+Level 11
+E> b
+Level 12
+T>  1 Share
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 10
+E> a
+Level 11
+T> Re: Strike: FG Breaks ASUU’s Rank, To Release Withheld Salaries Of Medical Lecturers
+Level 10
+T>  by
+Level 10
+E> a
+Level 11
+T> Tonypen247
+Level 10
+T> (
+Level 10
+E> span
+Level 11
+T> m
+Level 10
+T> ):
+Level 10
+E> span
+Level 11
+E> b
+Level 12
+T> 9:16pm
+Level 11
+T>  On
+Level 11
+E> b
+Level 12
+T> Jul 08
+Level 8
+E> tr
+Level 9
+E> td
+Level 10
+E> div
+Level 11
+T> Policy of divide and rule.
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+E> br
+Level 11
+T> God will help us.
+Level 5
+E> div
+Level 6
+E> p
+Level 7
+E> b
+Level 8
+T> (1)
+Level 7
+T>
+Level 7
+E> a
+Level 8
+T> (2)
+Level 7
+T>
+Level 7
+E> a
+Level 8
+T> (3)
+Level 7
+T>
+Level 7
+E> a
+Level 8
+T> (4)
+Level 7
+T>   (
+Level 7
+E> a
+Level 8
+E> b
+Level 9
+T> Reply
+Level 7
+T> )
+Level 6
+E> div
+Level 7
+E> a
+Level 8
+E> img
+Level 7
+E> a
+Level 8
+E> img
+Level 7
+E> a
+Level 8
+E> img
+Level 6
+E> p
+Level 7
+T>
+Level 7
+E> a
+Level 8
+T> ASUU To Begin Strike 2nd Of October
+Level 7
+T>   /
+Level 7
+E> a
+Level 8
+T> Difference Between ‘in the night’ and ‘at night’
+Level 7
+T>   /
+Level 7
+E> a
+Level 8
+T> Lady Asks Her Twitter Followers To Help Her Graduating Friend - See Replies Got
+Level 7
+T>
+Level 6
+E> p
+Level 7
+T> (
+Level 7
+E> a
+Level 8
+E> b
+Level 9
+T> Go Up
+Level 7
+T> )
+Level 6
+E> p
+Level 7
+E> table
+Level 8
+E> tbody
+Level 9
+E> tr
+Level 10
+E> td
+Level 11
+E> p
+Level 11
+E> form
+Level 12
+T>
+Level 12
+E> input
+Level 12
+T>
+
+Level 12
+E> input
+Level 11
+T> Sections:
+Level 11
+E> a
+Level 12
+T> politics
+Level 11
+T>
+Level 11
+E> a
+Level 12
+T> (1)
+Level 11
+T>
+Level 11
+E> a
+Level 12
+T> business
+Level 11
+T>
+Level 11
+E> a
+Level 12
+T> autos
+Level 11
+T>
+Level 11
+E> a
+Level 12
+T> (1)
+Level 11
+T>
+Level 11
+E> a
+Level 12
+T> jobs
+Level 11
+T>
+Level 11
+E> a
+Level 12
+T> (1)
+Level 11
+T>
+Level 11
+E> a
+Level 12
+T> career
+Level 11
+T>
+Level 11
+E> a
+Level 12
+T> education
+Level 11
+T>
+Level 11
+E> a
+Level 12
+T> (1)
+Level 11
+T>
+Level 11
+E> a
+Level 12
+T> romance
+Level 11
+T>
+Level 11
+E> a
+Level 12
+T> computers
+Level 11
+T>
+Level 11
+E> a
+Level 12
+T> phones
+Level 11
+T>
+Level 11
+E> a
+Level 12
+T> travel
+Level 11
+T>
+Level 11
+E> a
+Level 12
+T> sports
+Level 11
+T>
+Level 11
+E> a
+Level 12
+T> fashion
+Level 11
+T>
+Level 11
+E> a
+Level 12
+T> health
+Level 11
+T>
+Level 11
+E> br
+Level 11
+T>
+Level 11
+E> a
+Level 12
+T> religion
+Level 11
+T>
+Level 11
+E> a
+Level 12
+T> celebs
+Level 11
+T>
+Level 11
+E> a
+Level 12
+T> tv-movies
+Level 11
+T>
+Level 11
+E> a
+Level 12
+T> music-radio
+Level 11
+T>
+Level 11
+E> a
+Level 12
+T> literature
+Level 11
+T>
+Level 11
+E> a
+Level 12
+T> webmasters
+Level 11
+T>
+Level 11
+E> a
+Level 12
+T> programming
+Level 11
+T>
+Level 11
+E> a
+Level 12
+T> techmarket
+Level 11
+T>
+Level 11
+E> p
+Level 12
+T> Links:
+Level 12
+E> a
+Level 13
+T> (1)
+Level 12
+T>
+Level 12
+E> a
+Level 13
+T> (2)
+Level 12
+T>
+Level 12
+E> a
+Level 13
+T> (3)
+Level 12
+T>
+Level 12
+E> a
+Level 13
+T> (4)
+Level 12
+T>
+Level 12
+E> a
+Level 13
+T> (5)
+Level 12
+T>
+Level 12
+E> a
+Level 13
+T> (6)
+Level 12
+T>
+Level 12
+E> a
+Level 13
+T> (7)
+Level 12
+T>
+Level 12
+E> a
+Level 13
+T> (8)
+Level 12
+T>
+Level 12
+E> a
+Level 13
+T> (9)
+Level 12
+T>
+Level 12
+E> a
+Level 13
+T> (10)
+Level 12
+T>
+Level 11
+E> p
+Level 12
+E> b
+Level 13
+E> a
+Level 14
+T> Nairaland
+Level 12
+T>  - Copyright © 2005 - 2022
+Level 12
+E> a
+Level 13
+T> Oluwaseun Osewa
+Level 12
+T> . All rights reserved. See
+Level 12
+E> a
+Level 13
+T> How To Advertise
+Level 12
+T> . 93
+Level 12
+E> br
+Level 12
+E> b
+Level 13
+T> Disclaimer
+Level 12
+T> : Every Nairaland member is
+Level 12
+E> b
+Level 13
+T> solely responsible
+Level 12
+T>  for
+Level 12
+E> b
+Level 13
+T> anything
+Level 12
+T>  that he/she
+Level 12
+E> b
+Level 13
+T> posts
+Level 12
+T>  or
+Level 12
+E> b
+Level 13
+T> uploads
+Level 12
+T>  on Nairaland.
+Level 5
+E> script
+Level 6
+T>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91638-1', 'auto');
+  ga('send', 'pageview');
+
+
+Level 5
+E> script
+
+C:\DISCRETEfold_1\GOprog\nairaland-go>PAUSE
+Press any key to continue . . .
