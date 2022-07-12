@@ -6,7 +6,8 @@ import (
 	"golang.org/x/net/html"
 	"net/http"
 	"log"
-	"strings"
+	//"strings"
+	"io"
 )
 
 func main() {
@@ -23,17 +24,46 @@ func main() {
 	page.Body.Close()
 	err = ioutil.WriteFile("webpage.html", pagetext, 0644)
 	logError(err)
-	text := string(pagetext)
+	//text := string(pagetext)
 
-	doc, err := html.Parse(strings.NewReader(text))
-	logError(err)
+	//doc, err := html.Parse(strings.NewReader(text))
+	//logError(err)
+	tokenizer := html.NewTokenizer(page.Body)
+	//ctype := page.Header.Get("Content-Type")
+	fmt.Println(page.Body)
+	for {
+		tokenType := tokenizer.Next()
+		fmt.Println(html.TextToken)
+		if tokenType == html.ErrorToken {
+        	err := tokenizer.Err()
+        	if err == io.EOF {
+            	break
+        	}
+        	log.Fatalf("error tokenizing HTML: %v", tokenizer.Err())
+    	}
+    	if tokenType == html.StartTagToken {
+    		//get the token
+    		token := tokenizer.Token()
+    		//if the name of the element is "title"
+    		if "div" == token.Data {
+        		//the next token should be the page title
+        		tokenType = tokenizer.Next()
+        		//just make sure it's actually a text token
+        		if tokenType == html.TextToken {
+            		//report the page title and break out of the loop
+            		fmt.Println(tokenizer.Token().Data)
+            		//break
+        		}
+    		}
+		}
+	}
 /*	fmt.Println(doc.Type)
 	fmt.Println(doc.Attr)
 	fmt.Println(doc.Data)
 	fmt.Println(doc.FirstChild)
 	fmt.Println(doc.NextSibling)*/
-	var cnt = 1
-	procNode(doc, cnt)
+	//var cnt = 1
+	//procNode(doc, cnt)
 
 }
 
