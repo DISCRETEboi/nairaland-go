@@ -39,11 +39,12 @@ func main() {
 	doc, err := html.Parse(strings.NewReader(text))
 	logError(err)
 	procNode(doc)
-	fmt.Println(divs[0])
 	fmt.Println("+---------------------------------------------------+")
-	fmt.Println(divs[1])
-	fmt.Println("+---------------------------------------------------+")
-	fmt.Println(divs[2])
+	for i, val := range divs {
+		fmt.Println(i)
+		fmt.Println(val)
+		fmt.Println("+---------------------------------------------------+")
+	}
 }
 
 func logError(err error) {
