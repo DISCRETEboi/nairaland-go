@@ -75,13 +75,12 @@ func main() {
 	pageposts := Webpage{divs}
 	//fmt.Println(pageposts)
 	err = webpage.Execute(os.Stdout, pageposts)
-
-	fmt.Println("+---------------------------------------------------+")
+	/*fmt.Println("+---------------------------------------------------+")
 	for i, val := range divs {
 		fmt.Println(i)
 		fmt.Println(val)
 		fmt.Println("+---------------------------------------------------+")
-	}
+	}*/
 }
 
 func logError(err error) {
