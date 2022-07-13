@@ -15,10 +15,43 @@ import (
 	"strings"
 	"bytes"
 	"io"
+	"text/template"
+	"os"
 )
 
-var divs []string
+var divs []Post
 //var hA = []html.Attribute{html.Attribute{"class","narrow"}}
+
+var webpage = template.Must(template.New("webpage").Parse(`
+{{range .Posts}}
+<div class="comment">
+  <div class="comment-avatar">
+		<a href="https://htmlcolors.com/user/Antonios"><img class="mobilecommentimage" style="object-fit:cover" src="./Google Color Picker _ Html Colors_files/change-user.png"></a>
+  </div>
+
+  <div class="comment-box">
+    <div style="line-height:20px;font-weight:700;font-size:17px"><a href="https://htmlcolors.com/user/Antonios" style="color:#428bca">Antonios Bakouris</a></div>
+    <div style="line-height:20px;white-space: pre-wrap;" class="comment-text">{{.Comment}}<img src="https://www.nairaland.com/faces/grin.png" alt="grin" border="0" class="faces"></div>
+    <div class="comment-footer">
+      <div class="comment-info">
+        <span style="line-height:18px" class="comment-date">2019-07-04 09:22:48</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+{{end}}
+`))
+
+type Post struct {
+	Comment string
+	//Name string
+	//Time string
+}
+
+type Webpage struct {
+	Posts []Post
+}
 
 func main() {
 	var link string
@@ -39,6 +72,10 @@ func main() {
 	doc, err := html.Parse(strings.NewReader(text))
 	logError(err)
 	procNode(doc)
+	pageposts := Webpage{divs}
+	//fmt.Println(pageposts)
+	err = webpage.Execute(os.Stdout, pageposts)
+
 	fmt.Println("+---------------------------------------------------+")
 	for i, val := range divs {
 		fmt.Println(i)
@@ -71,7 +108,7 @@ func procNode(node *html.Node) {
 	if node.Type == html.ElementNode && node.Data == "div" {
 		//fmt.Printf("%T\n", renderNode(node))
 		if node.Attr[0].Key == "class" && node.Attr[0].Val == "narrow" {
-			divs = append(divs, renderNode(node))
+			divs = append(divs, Post{renderNode(node)})
 		}
 	}
 	//cnt = cnt + 1
