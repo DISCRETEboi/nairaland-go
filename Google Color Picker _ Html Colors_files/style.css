@@ -1798,6 +1798,7 @@ color: #fff;
    min-height: 60px;
    position: relative;
    padding: 15px;
+   padding-bottom: 5px;
  }
 
   .comment .comment-main{
@@ -1838,9 +1839,9 @@ color: #fff;
   .comment .comment-header{
     line-height:20px;
     font-weight:700;
-    font-size:15px;
-    padding-bottom:10px;
-    padding-top:10px;
+    font-size:12px;
+    padding-bottom:8px;
+    padding-top:8px;
     padding-left:10px;
     background-color: #dfe5ed;
  }
