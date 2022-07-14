@@ -27,8 +27,9 @@ var webpage = template.Must(template.New("webpage").Parse(`
 <link rel="stylesheet" href="./Google Color Picker _ Html Colors_files/font-awesome.min.css">
 
 <div class="comment">
-  <div class="comment-box">
-    This is the original post. Check the comments below. [This part will be fixed later]
+  <div class="comment-main">
+    <div class="comment-header"><a href="https://htmlcolors.com/user/Antonios" style="color:#428bca">A Nairaland User</a></div>
+    <div style="line-height:20px;white-space: pre-wrap;" class="comment-text">This is the original post. Check the comments below. [This part will be fixed later]</div>
   </div>
 </div>
 
@@ -39,7 +40,7 @@ var webpage = template.Must(template.New("webpage").Parse(`
   </div>
 
   <div class="comment-box">
-    <div style="line-height:20px;font-weight:700;font-size:17px"><a href="https://htmlcolors.com/user/Antonios" style="color:#428bca">A Nairaland User</a></div>
+    <div class="comment-header"><a href="https://htmlcolors.com/user/Antonios" style="color:#428bca">A Nairaland User</a></div>
     <div style="line-height:20px;white-space: pre-wrap;" class="comment-text">{{.Comment}}</div>
     <div class="comment-footer">
       <div class="comment-info">

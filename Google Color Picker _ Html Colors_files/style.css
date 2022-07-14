@@ -1,20 +1,10 @@
 @font-face {
   font-family: 'ProximaNovaSoft-Regular';
-  src: url('/letra/ProximaNovaSoft-Regular.woff') format('woff'),
-       url('/letra/ProximaNovaSoft-Regular.ttf') format('truetype'),
-       url('/letra/ProximaNovaSoft-Regular.svg#ProximaNovaSoft-Regular') format('svg');
+  src: url('letra/ProximaNovaSoft-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'proxima-nova-soft-regular-5a1ae0c89ef4d';
-  src: url('/letra/proxima-nova-soft-regular-5a1ae0c89ef4d.eot');
-  src: url('/letra/proxima-nova-soft-regular-5a1ae0c89ef4d.woff2') format('woff2'),
-       url('/letra/proxima-nova-soft-regular-5a1ae0c89ef4d.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
-}
 .popup {
   width: 380px;
   height: 180px;
@@ -1810,6 +1800,16 @@ color: #fff;
    padding: 15px;
  }
 
+  .comment .comment-main{
+   background-color: #fcfcfc;
+   border-radius: 4px;
+   box-shadow: 0 1px 1px rgba(0, 0, 0, .15);
+   margin-left: 0px;
+   min-height: 200px;
+   position: relative;
+   padding: 5px;
+ }
+
  .comment .comment-box:before,
  .comment .comment-box:after{
    border-width: 10px 10px 10px 0;
@@ -1824,13 +1824,25 @@ color: #fff;
 
  .comment .comment-text{
    color: #555f77;
-   font-size: 15px;
-   margin-bottom: 25px;
+   font-size: 12px;
+   padding-left:10px;
  }
 
  .comment .comment-footer{
    color: #acb4c2;
-   font-size: 14px;
+   font-size: 10px;
+   padding-top: 5px;
+   padding-left:10px;
+ }
+
+  .comment .comment-header{
+    line-height:20px;
+    font-weight:700;
+    font-size:15px;
+    padding-bottom:10px;
+    padding-top:10px;
+    padding-left:10px;
+    background-color: #dfe5ed;
  }
 
  .comment .comment-footer:after{
@@ -2088,7 +2100,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: 'ProximaNovaSoft-Regular'!important;
+  font-family: 'Verdana'!important;
   color: #25283D;
   background-color: #f1f7f9;
   -webkit-font-smoothing: antialiased;
