@@ -45,18 +45,16 @@ var webpage = template.Must(template.New("webpage").Parse(`
   }
 
   a {
-    color: #8F3985;
+    color: #428bca;
     text-decoration: none;
   }
 
- .comment-form,
  .comment{
    margin-bottom: 20px;
    position: relative;
    z-index: 0;
  }
 
- .comment-form .comment-avatar,
  .comment .comment-avatar{
    border: 2px solid #fff;
    border-radius: 50%;
@@ -69,7 +67,6 @@ var webpage = template.Must(template.New("webpage").Parse(`
    width: 40px;
  }
 
- .comment-form .comment-avatar img,
  .comment .comment-avatar img{
    display: block;
    height: 100%;
