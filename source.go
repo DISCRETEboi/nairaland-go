@@ -17,15 +17,137 @@ import (
 	"io"
 	"text/template"
 	//"os"
-	//"convertapi-go"
+	"github.com/ConvertAPI/convertapi-go"
+	"github.com/ConvertAPI/convertapi-go/config"
+	"github.com/ConvertAPI/convertapi-go/param"
 )
 
 var divs []Post
 //var hA = []html.Attribute{html.Attribute{"class","narrow"}}
 
 var webpage = template.Must(template.New("webpage").Parse(`
-<link rel="stylesheet" href="./Google Color Picker _ Html Colors_files/style.css"> <!-- Resource style -->
-<link rel="stylesheet" href="./Google Color Picker _ Html Colors_files/font-awesome.min.css">
+<style type="text/css">
+  *, *::after, *::before {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+    font-size: 1.6rem;
+    font-family: 'Verdana'!important;
+    color: #25283D;
+    background-color: #f1f7f9;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a {
+    color: #8F3985;
+    text-decoration: none;
+  }
+
+ .comment-form,
+ .comment{
+   margin-bottom: 20px;
+   position: relative;
+   z-index: 0;
+ }
+
+ .comment-form .comment-avatar,
+ .comment .comment-avatar{
+   border: 2px solid #fff;
+   border-radius: 50%;
+   box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+   height: 40px;
+   left: 0;
+   overflow: hidden;
+   position: absolute;
+   top: 0;
+   width: 40px;
+ }
+
+ .comment-form .comment-avatar img,
+ .comment .comment-avatar img{
+   display: block;
+   height: 100%;
+   width: 100%;
+ }
+
+ .comment .comment-box{
+   background-color: #fcfcfc;
+   border-radius: 4px;
+   box-shadow: 0 1px 1px rgba(0, 0, 0, .50);
+   margin-left: 50px;
+   min-height: 60px;
+   position: relative;
+   padding: 5px;
+   padding-bottom: 5px;
+ }
+
+  .comment .comment-main{
+   background-color: #fcfcfc;
+   border-radius: 4px;
+   box-shadow: 0 1px 1px rgba(0, 0, 0, .15);
+   margin-left: 0px;
+   min-height: 200px;
+   position: relative;
+   padding: 5px;
+ }
+
+  .comment blockquote{
+   background-color: #dfe5ed;
+   border-radius: 4px;
+   box-shadow: 0 1px 1px rgba(0, 0, 0, .50);
+   min-height: 60px;
+   position: relative;
+   padding: 5px;
+ }
+
+ .comment .comment-box:before,
+ .comment .comment-box:after{
+   border-width: 10px 10px 10px 0;
+   border-style: solid;
+   border-color: transparent #FCFCFC;
+   content: "";
+   left: -10px;
+   position: absolute;
+   top: 20px;
+ }
+
+
+ .comment .comment-text{
+   color: #555f77;
+   font-size: 12px;
+   padding-left:10px;
+   padding-top: 5px;
+ }
+
+ .comment .comment-footer{
+   color: #acb4c2;
+   font-size: 10px;
+   padding-top: 5px;
+   padding-left:10px;
+ }
+
+  .comment .comment-header{
+    line-height:20px;
+    font-weight:700;
+    font-size:12px;
+    padding-bottom:8px;
+    padding-top:8px;
+    padding-left:10px;
+    background-color: #dfe5ed;
+ }
+
+ .comment .comment-footer:after{
+   content: "";
+   display: table;
+   clear: both;
+ }
+</style>
 
 <div class="comment">
   <div class="comment-main">
@@ -98,6 +220,9 @@ func main() {
 		fmt.Println(val)
 		fmt.Println("+---------------------------------------------------+")
 	}*/
+	config.Default.Secret = "Uhy0MidCpF8ZmoUT"
+	convertapi.ConvDef("html", "pdf",
+		param.NewPath("File", "new-nairaland-page.html", nil)).ToPath("convertapi/new-nairaland-page.pdf")
 }
 
 func logError(err error) {
