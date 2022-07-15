@@ -159,7 +159,7 @@ var webpage = template.Must(template.New("webpage").Parse(`
 {{range .Posts}}
 <div class="comment">
   <div class="comment-avatar">
-		<a href="https://htmlcolors.com/user/Antonios"><img class="mobilecommentimage" style="object-fit:cover" src="./Google Color Picker _ Html Colors_files/change-user.png"></a>
+  	<a href="https://htmlcolors.com/user/Antonios"><img class="mobilecommentimage" style="object-fit:cover" src="https://i.ibb.co/kgHjcs6/change-user.png" border="0"></a>
   </div>
 
   <div class="comment-box">
