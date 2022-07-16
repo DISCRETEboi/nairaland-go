@@ -117,13 +117,14 @@ var webpage = template.Must(template.New("webpage").Parse(`
    font-size: 12px;
    padding-left:10px;
    padding-top: 5px;
+   padding-bottom: 15px;
  }
 
  .comment .comment-footer{
-   color: #acb4c2;
-   font-size: 10px;
-   padding-top: 5px;
-   padding-left:10px;
+   font-size: 12px;
+   padding: 5px;
+   background-color: #dfe5ed;
+   color: #555f77;
  }
 
   .comment .comment-header{
@@ -136,20 +137,32 @@ var webpage = template.Must(template.New("webpage").Parse(`
     background-color: #dfe5ed;
  }
 
+  .comment-main .comment-header{
+    line-height:50px;
+    font-weight:1500;
+    font-size:15px;
+    padding:8px;
+    background-color: #dfe5ed;
+ }
+
  .comment .comment-footer:after{
    content: "";
    display: table;
    clear: both;
  }
+
+ #pstby{
+ 	font-weight: normal;
+ }
 </style>
 
 <div class="comment">
   <div class="comment-main">
-    <div class="comment-header"><a href="https://htmlcolors.com/user/Antonios" style="color:#428bca">{{.Main.Name}} posted the topic -> {{.Topic}}</a></div>
+    <div class="comment-header"><a href="https://htmlcolors.com/user/Antonios" style="color:#428bca">{{.Topic}}<span id="pstby"> posted by </span>{{.Main.Name}}</a></div>
     <div style="line-height:20px;white-space: pre-wrap;" class="comment-text">{{.Main.Comment}}</div>
     <div class="comment-footer">
       <div class="comment-info">
-        <span style="line-height:18px" class="comment-date">{{.Date}} {{.Time}}</span>
+        <span style="line-height:18px" class="comment-date"><span id="pstby">Posted </span>{{.Time}}</span>
       </div>
     </div>
   </div>
@@ -173,7 +186,6 @@ var webpage = template.Must(template.New("webpage").Parse(`
 var divs []Post
 var ind = 0
 var cnt, x, y, z = 1, 1, 1, 1
-//var hA = []html.Attribute{html.Attribute{"class","narrow"}}
 var elmntcnt = 0
 var pageposts Webpage
 
