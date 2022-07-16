@@ -22,9 +22,6 @@ import (
 	"github.com/ConvertAPI/convertapi-go/param"
 )
 
-var divs []Post
-//var hA = []html.Attribute{html.Attribute{"class","narrow"}}
-
 var webpage = template.Must(template.New("webpage").Parse(`
 <style type="text/css">
   *, *::after, *::before {
@@ -148,8 +145,8 @@ var webpage = template.Must(template.New("webpage").Parse(`
 
 <div class="comment">
   <div class="comment-main">
-    <div class="comment-header"><a href="https://htmlcolors.com/user/Antonios" style="color:#428bca">A Nairaland User</a></div>
-    <div style="line-height:20px;white-space: pre-wrap;" class="comment-text">This is the original post. Check the comments below. [This part will be fixed later]</div>
+    <div class="comment-header"><a href="https://htmlcolors.com/user/Antonios" style="color:#428bca">{{.Main.Name}} posted the topic {{.Topic}} on {{.Date}} at {{.Time}}</a></div>
+    <div style="line-height:20px;white-space: pre-wrap;" class="comment-text">{{.Main.Comment}}</div>
   </div>
 </div>
 
@@ -160,7 +157,7 @@ var webpage = template.Must(template.New("webpage").Parse(`
   </div>
 
   <div class="comment-box">
-    <div class="comment-header"><a href="https://htmlcolors.com/user/Antonios" style="color:#428bca">A Nairaland User</a></div>
+    <div class="comment-header"><a href="https://htmlcolors.com/user/Antonios" style="color:#428bca">{{.Name}}</a></div>
     <div style="line-height:20px;white-space: pre-wrap;" class="comment-text">{{.Comment}}</div>
     <div class="comment-footer">
       <div class="comment-info">
@@ -174,14 +171,27 @@ var webpage = template.Must(template.New("webpage").Parse(`
 
 `))
 
+var divs []Post
+var ind = 0
+var cnt, x, y, z = 1, 1, 1, 1
+//var hA = []html.Attribute{html.Attribute{"class","narrow"}}
+var elmntcnt = 0
+var pageposts Webpage
+
 type Post struct {
 	Comment string
-	//Name string
+	Name string
 	//Time string
+	//Date string
+	//Likes string
 }
 
 type Webpage struct {
 	Posts []Post
+	Main Post
+	Topic string
+	Time string
+	Date string
 }
 
 func main() {
@@ -205,8 +215,10 @@ func main() {
 	doc, err := html.Parse(strings.NewReader(text))
 	logError(err)
 	procNode(doc)
-	pageposts := Webpage{divs}
-	//fmt.Println(pageposts)
+	divs = cleanDivs(divs)
+	pageposts.Posts = divs[1:]
+	pageposts.Main = divs[0] 
+	//fmt.Println(divs)
 	err = webpage.Execute(w, pageposts)
 	logError(err)
 	err = ioutil.WriteFile("new-nairaland-page.html", []byte(buf.String()), 0644)
@@ -236,21 +248,52 @@ func renderNode(n *html.Node) string {
 }
 
 func procNode(node *html.Node) {
-	/*fmt.Println("Level", cnt)
-	if node.Type == html.ElementNode {
-		fmt.Println("E>", node.Data)
+	if node.Type == html.ElementNode  && node.Data == "b" {
+		elmntcnt++
 	}
-	if node.Type == html.TextNode {
-		fmt.Println("T>", node.Data)
-	}*/
-	if node.Type == html.ElementNode && node.Data == "div" {
-		//fmt.Printf("%T\n", renderNode(node))
-		if node.Attr[0].Key == "class" && node.Attr[0].Val == "narrow" {
-			divs = append(divs, Post{renderNode(node)})
+	if node.Type == html.ElementNode && node.Data == "a" {
+		for _, val := range node.Attr {
+			if val.Key == "class" && val.Val == "user" {
+				divs = append(divs, Post{"", ""})
+				divs[ind].Name = renderNode(node)
+				//fmt.Println(divs[ind], ind)
+			}
 		}
+	} else if node.Type == html.ElementNode && node.Data == "div" {
+		if node.Attr[0].Key == "class" && node.Attr[0].Val == "narrow" {
+			divs = append(divs, Post{"", ""})
+			divs[ind].Comment = renderNode(node)
+			//fmt.Println(divs[ind], ind)
+			ind = ind + 1
+		}
+	} else if elmntcnt == 8 && x == cnt {
+		pageposts.Time = renderNode(node)
+		x = cnt
+		fmt.Println(pageposts.Time)
+	} else if elmntcnt == 9 && y == cnt {
+		pageposts.Date = renderNode(node)
+		y = cnt
+		fmt.Println(pageposts.Date)
+	} else if node.Type == html.ElementNode && node.Data == "title" && x == cnt {
+		pageposts.Topic = renderNode(node)
+		z = cnt
+		fmt.Println(pageposts.Topic)
 	}
-	//cnt = cnt + 1
+	cnt++
 	for i := node.FirstChild; i != nil; i = i.NextSibling {
 		procNode(i)
 	}
+}
+
+func cleanDivs(divs []Post) []Post {
+	pst := Post{}
+	for {
+		if divs[len(divs)-1] == pst {
+			divs = divs[:len(divs)-2]
+			//fmt.Println("=====================================================")
+		} else {
+			break
+		}
+	}
+	return divs
 }
