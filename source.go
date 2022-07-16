@@ -145,8 +145,13 @@ var webpage = template.Must(template.New("webpage").Parse(`
 
 <div class="comment">
   <div class="comment-main">
-    <div class="comment-header"><a href="https://htmlcolors.com/user/Antonios" style="color:#428bca">{{.Main.Name}} posted the topic {{.Topic}} on {{.Date}} at {{.Time}}</a></div>
+    <div class="comment-header"><a href="https://htmlcolors.com/user/Antonios" style="color:#428bca">{{.Main.Name}} posted the topic -> {{.Topic}}</a></div>
     <div style="line-height:20px;white-space: pre-wrap;" class="comment-text">{{.Main.Comment}}</div>
+    <div class="comment-footer">
+      <div class="comment-info">
+        <span style="line-height:18px" class="comment-date">{{.Date}} {{.Time}}</span>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -159,12 +164,6 @@ var webpage = template.Must(template.New("webpage").Parse(`
   <div class="comment-box">
     <div class="comment-header"><a href="https://htmlcolors.com/user/Antonios" style="color:#428bca">{{.Name}}</a></div>
     <div style="line-height:20px;white-space: pre-wrap;" class="comment-text">{{.Comment}}</div>
-    <div class="comment-footer">
-      <div class="comment-info">
-        <span style="line-height:18px" class="comment-date">2019-07-04 09:22:48</span>
-      </div>
-
-    </div>
   </div>
 </div>
 {{end}}
@@ -268,18 +267,18 @@ func procNode(node *html.Node) {
 		}
 	} else if elmntcnt == 8 && x == cnt {
 		pageposts.Time = renderNode(node)
-		x = cnt
+		x++
 		fmt.Println(pageposts.Time)
 	} else if elmntcnt == 9 && y == cnt {
 		pageposts.Date = renderNode(node)
-		y = cnt
+		y++
 		fmt.Println(pageposts.Date)
-	} else if node.Type == html.ElementNode && node.Data == "title" && x == cnt {
-		pageposts.Topic = renderNode(node)
-		z = cnt
+	} else if node.Type == html.ElementNode && node.Data == "title" && z == cnt {
+		pageposts.Topic = renderNode(node.FirstChild)
+		z++
 		fmt.Println(pageposts.Topic)
 	}
-	cnt++
+	//cnt++
 	for i := node.FirstChild; i != nil; i = i.NextSibling {
 		procNode(i)
 	}
