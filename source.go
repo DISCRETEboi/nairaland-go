@@ -209,40 +209,40 @@ func main() {
 	var link string
 	var buf bytes.Buffer
     w := io.Writer(&buf)
-	fmt.Print("Enter the link to process: ")
+	fmt.Print("Enter the link to process (to process a default link, just press Enter): ")
 	fmt.Scanf("%s", &link)
 	if link == "" {
 		link = "https://www.nairaland.com/7217386/strike-fg-breaks-asuus-rank"
 	}
+	fmt.Println("*********")
 	page, err := http.Get(link)
 	logError(err)
 	pagetext, err := ioutil.ReadAll(page.Body)
 	logError(err)
 	page.Body.Close()
-	fmt.Printf("You entered the link \"%s\" and the webpage was successfully processed!\n", link)
+	fmt.Printf("The link \"%s\" was successfully processed!\n", link)
+	fmt.Println("*********")
 	err = ioutil.WriteFile("webpage.html", pagetext, 0644)
 	logError(err)
 	text := string(pagetext)
 	doc, err := html.Parse(strings.NewReader(text))
 	logError(err)
 	procNode(doc)
+	fmt.Println("The existing webpage was successfully parsed!")
+	fmt.Println("*********")
 	divs = cleanDivs(divs)
 	pageposts.Posts = divs[1:]
-	pageposts.Main = divs[0] 
-	//fmt.Println(divs)
+	pageposts.Main = divs[0]
 	err = webpage.Execute(w, pageposts)
 	logError(err)
 	err = ioutil.WriteFile("new-nairaland-page.html", []byte(buf.String()), 0644)
 	logError(err)
-	/*fmt.Println("+---------------------------------------------------+")
-	for i, val := range divs {
-		fmt.Println(i)
-		fmt.Println(val)
-		fmt.Println("+---------------------------------------------------+")
-	}*/
+	fmt.Println("An html version of the new webpage was saved as 'new-nairaland-page.html' in the current working directory!")
+	fmt.Println("*********")
 	config.Default.Secret = "Uhy0MidCpF8ZmoUT"
 	convertapi.ConvDef("html", "pdf",
-		param.NewPath("File", "new-nairaland-page.html", nil)).ToPath("convertapi/new-nairaland-page.pdf")
+		param.NewPath("File", "new-nairaland-page.html", nil)).ToPath("new-nairaland-page.pdf")
+	fmt.Println("The pdf presentation of the webpage was successfully generated, and saved as 'new-nairaland-page.pdf' in the current working directory!")
 }
 
 func logError(err error) {
@@ -267,30 +267,24 @@ func procNode(node *html.Node) {
 			if val.Key == "class" && val.Val == "user" {
 				divs = append(divs, Post{"", ""})
 				divs[ind].Name = renderNode(node)
-				//fmt.Println(divs[ind], ind)
 			}
 		}
 	} else if node.Type == html.ElementNode && node.Data == "div" {
 		if node.Attr[0].Key == "class" && node.Attr[0].Val == "narrow" {
 			divs = append(divs, Post{"", ""})
 			divs[ind].Comment = renderNode(node)
-			//fmt.Println(divs[ind], ind)
 			ind = ind + 1
 		}
 	} else if elmntcnt == 8 && x == cnt {
 		pageposts.Time = renderNode(node)
 		x++
-		fmt.Println(pageposts.Time)
 	} else if elmntcnt == 9 && y == cnt {
 		pageposts.Date = renderNode(node)
 		y++
-		fmt.Println(pageposts.Date)
 	} else if node.Type == html.ElementNode && node.Data == "title" && z == cnt {
 		pageposts.Topic = renderNode(node.FirstChild)
 		z++
-		fmt.Println(pageposts.Topic)
 	}
-	//cnt++
 	for i := node.FirstChild; i != nil; i = i.NextSibling {
 		procNode(i)
 	}
@@ -301,7 +295,6 @@ func cleanDivs(divs []Post) []Post {
 	for {
 		if divs[len(divs)-1] == pst {
 			divs = divs[:len(divs)-2]
-			//fmt.Println("=====================================================")
 		} else {
 			break
 		}
