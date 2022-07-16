@@ -212,7 +212,7 @@ func main() {
 	fmt.Print("Enter the link to process (to process a default link, just press Enter): ")
 	fmt.Scanf("%s", &link)
 	if link == "" {
-		link = "https://www.nairaland.com/7217386/strike-fg-breaks-asuus-rank"
+		link = "https://www.nairaland.com/7229653/court-orders-upward-review-judges"
 	}
 	fmt.Println("*********")
 	page, err := http.Get(link)
