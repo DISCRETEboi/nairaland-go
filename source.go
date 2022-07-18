@@ -210,12 +210,16 @@ func main() {
 	var link string
 	var buf bytes.Buffer
     w := io.Writer(&buf)
-	fmt.Print("Enter the link to process (to process a default link, just press Enter): ")
+    fmt.Println("***********************************************")
+    fmt.Println("              Program Begins")
+    fmt.Println("***********************************************")
+	fmt.Println("Enter the link to be processed below (to process a default link, just press Enter) ")
+	fmt.Print("Link >>> ")
 	fmt.Scanf("%s", &link)
 	if link == "" {
 		link = "https://www.nairaland.com/7229653/court-orders-upward-review-judges"
 	}
-	fmt.Println("*********")
+	fmt.Println("***********************************************")
 	link0 := link
 	var page *http.Response
 	var pageTrack *http.Response
@@ -228,7 +232,6 @@ func main() {
 		if pageTrack == nil {
 			// do nothing
 		} else if page.Request.URL.Path == pageTrack.Request.URL.Path || x == 20 {
-			fmt.Println("break!")
 			break
 		}
 		link = link0 + "/" + strconv.Itoa(x)
@@ -236,39 +239,38 @@ func main() {
 		pageTrack = page
 		x++
 	}
-	//page.Body.Close()
-	//pageTrack.Body.Close()
-	var divsClean []Post
 	for i, wpage := range pages {
 		pagetext, err := ioutil.ReadAll(wpage.Body)
 		logError(err)
 		fmt.Println("The link", wpage.Request.URL.Path, "was successfully processed!")
-		fmt.Println("*********")
 		err = ioutil.WriteFile("webpage.html", pagetext, 0644)
 		logError(err)
 		text := string(pagetext)
 		doc, err := html.Parse(strings.NewReader(text))
 		logError(err)
 		procNode(doc)
-		fmt.Println("The existing webpage", i, "was successfully parsed!")
-		fmt.Println("*********")
-		divsClean = cleanDivs(divs)
-		pageposts.Posts = divsClean[1:]
-		pageposts.Main = divsClean[0]
-		err = webpage.Execute(w, pageposts)
-		logError(err)
-		err = ioutil.WriteFile("new-nairaland-page.html", []byte(buf.String()), 0644)
-		logError(err)
-		fmt.Println("An html version of the new webpage was saved as 'new-nairaland-page.html' in the current working directory!")
-		fmt.Println();fmt.Println("*******************************************");fmt.Println()
+		fmt.Println("[The existing webpage indexed -", i+1, "was successfully parsed!]")
+		fmt.Println("***********************************************")
 		wpage.Body.Close()
 	}
 	page.Body.Close()
 	pageTrack.Body.Close()
+	divs = cleanDivs(divs)
+	pageposts.Posts = divs[1:]
+	pageposts.Main = divs[0]
+	err = webpage.Execute(w, pageposts)
+	logError(err)
+	err = ioutil.WriteFile("new-nairaland-page.html", []byte(buf.String()), 0644)
+	logError(err)
+	fmt.Println("An html version of the new webpage was saved as 'new-nairaland-page.html' in the current working directory!")
+	fmt.Println("Generating PDF version (this may take a while)...")
 	config.Default.Secret = "Uhy0MidCpF8ZmoUT"
 	convertapi.ConvDef("html", "pdf",
 		param.NewPath("File", "new-nairaland-page.html", nil)).ToPath("new-nairaland-page.pdf")
-	fmt.Println("The pdf presentation of the webpage was successfully generated, and saved as 'new-nairaland-page.pdf' in the current working directory!")
+	fmt.Println("The PDF presentation of the webpage was successfully generated, and saved as 'new-nairaland-page.pdf' in the current working directory!")
+	fmt.Println("***********************************************")
+    fmt.Println("              Program Ends")
+	fmt.Println("***********************************************")
 }
 
 func logError(err error) {
