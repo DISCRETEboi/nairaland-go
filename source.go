@@ -20,6 +20,8 @@ import (
 	"github.com/ConvertAPI/convertapi-go"
 	"github.com/ConvertAPI/convertapi-go/config"
 	"github.com/ConvertAPI/convertapi-go/param"
+	//"bytes"
+	"strconv"
 )
 
 var webpage = template.Must(template.New("webpage").Parse(`
@@ -86,7 +88,6 @@ var webpage = template.Must(template.New("webpage").Parse(`
    border-radius: 4px;
    box-shadow: 0 1px 1px rgba(0, 0, 0, .15);
    margin-left: 0px;
-   min-height: 200px;
    position: relative;
    padding: 5px;
  }
@@ -215,30 +216,55 @@ func main() {
 		link = "https://www.nairaland.com/7229653/court-orders-upward-review-judges"
 	}
 	fmt.Println("*********")
-	page, err := http.Get(link)
-	logError(err)
-	pagetext, err := ioutil.ReadAll(page.Body)
-	logError(err)
+	link0 := link
+	var page *http.Response
+	var pageTrack *http.Response
+	var err error
+	var pages []*http.Response
+	x := 1
+	for {
+		page, err = http.Get(link)
+		logError(err)
+		if pageTrack == nil {
+			// do nothing
+		} else if page.Request.URL.Path == pageTrack.Request.URL.Path || x == 20 {
+			fmt.Println("break!")
+			break
+		}
+		link = link0 + "/" + strconv.Itoa(x)
+		pages = append(pages, page)
+		pageTrack = page
+		x++
+	}
+	//page.Body.Close()
+	//pageTrack.Body.Close()
+	var divsClean []Post
+	for i, wpage := range pages {
+		pagetext, err := ioutil.ReadAll(wpage.Body)
+		logError(err)
+		fmt.Println("The link", wpage.Request.URL.Path, "was successfully processed!")
+		fmt.Println("*********")
+		err = ioutil.WriteFile("webpage.html", pagetext, 0644)
+		logError(err)
+		text := string(pagetext)
+		doc, err := html.Parse(strings.NewReader(text))
+		logError(err)
+		procNode(doc)
+		fmt.Println("The existing webpage", i, "was successfully parsed!")
+		fmt.Println("*********")
+		divsClean = cleanDivs(divs)
+		pageposts.Posts = divsClean[1:]
+		pageposts.Main = divsClean[0]
+		err = webpage.Execute(w, pageposts)
+		logError(err)
+		err = ioutil.WriteFile("new-nairaland-page.html", []byte(buf.String()), 0644)
+		logError(err)
+		fmt.Println("An html version of the new webpage was saved as 'new-nairaland-page.html' in the current working directory!")
+		fmt.Println();fmt.Println("*******************************************");fmt.Println()
+		wpage.Body.Close()
+	}
 	page.Body.Close()
-	fmt.Printf("The link \"%s\" was successfully processed!\n", link)
-	fmt.Println("*********")
-	err = ioutil.WriteFile("webpage.html", pagetext, 0644)
-	logError(err)
-	text := string(pagetext)
-	doc, err := html.Parse(strings.NewReader(text))
-	logError(err)
-	procNode(doc)
-	fmt.Println("The existing webpage was successfully parsed!")
-	fmt.Println("*********")
-	divs = cleanDivs(divs)
-	pageposts.Posts = divs[1:]
-	pageposts.Main = divs[0]
-	err = webpage.Execute(w, pageposts)
-	logError(err)
-	err = ioutil.WriteFile("new-nairaland-page.html", []byte(buf.String()), 0644)
-	logError(err)
-	fmt.Println("An html version of the new webpage was saved as 'new-nairaland-page.html' in the current working directory!")
-	fmt.Println("*********")
+	pageTrack.Body.Close()
 	config.Default.Secret = "Uhy0MidCpF8ZmoUT"
 	convertapi.ConvDef("html", "pdf",
 		param.NewPath("File", "new-nairaland-page.html", nil)).ToPath("new-nairaland-page.pdf")
