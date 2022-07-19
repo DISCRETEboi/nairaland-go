@@ -16,11 +16,9 @@ import (
 	"bytes"
 	"io"
 	"text/template"
-	//"os"
 	"github.com/ConvertAPI/convertapi-go"
 	"github.com/ConvertAPI/convertapi-go/config"
 	"github.com/ConvertAPI/convertapi-go/param"
-	//"bytes"
 	"strconv"
 )
 
@@ -257,7 +255,9 @@ func main() {
 	pageTrack.Body.Close()
 	divs = cleanDivs(divs)
 	if len(divs) > 1 {
-		pageposts.Posts = divs[1:]
+		pageposts.Posts = divs[1: ]
+	} else if len(divs) == 0 {
+		log.Fatal("No posts in the thread!")
 	}
 	pageposts.Main = divs[0]
 	err = webpage.Execute(w, pageposts)
@@ -323,10 +323,8 @@ func procNode(node *html.Node) {
 func cleanDivs(divs []Post) []Post {
 	pst := Post{}
 	for {
-		if len(divs) <= 1 {
-			break
-		} else if divs[len(divs)-1] == pst {
-			divs = divs[:len(divs)-1]
+		if divs[len(divs)-1] == pst {
+			divs = divs[ :len(divs)-1]
 		} else {
 			break
 		}
