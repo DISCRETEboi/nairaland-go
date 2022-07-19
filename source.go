@@ -256,7 +256,9 @@ func main() {
 	page.Body.Close()
 	pageTrack.Body.Close()
 	divs = cleanDivs(divs)
-	pageposts.Posts = divs[1:]
+	if len(divs) > 1 {
+		pageposts.Posts = divs[1:]
+	}
 	pageposts.Main = divs[0]
 	err = webpage.Execute(w, pageposts)
 	logError(err)
@@ -321,8 +323,10 @@ func procNode(node *html.Node) {
 func cleanDivs(divs []Post) []Post {
 	pst := Post{}
 	for {
-		if divs[len(divs)-1] == pst {
-			divs = divs[:len(divs)-2]
+		if len(divs) <= 1 {
+			break
+		} else if divs[len(divs)-1] == pst {
+			divs = divs[:len(divs)-1]
 		} else {
 			break
 		}
