@@ -218,6 +218,7 @@ func main() {
 		link = "https://www.nairaland.com/7229653/court-orders-upward-review-judges"
 	}
 	fmt.Println("***********************************************")
+	fmt.Println("Fetching web pages...")
 	link0 := link
 	var page *http.Response
 	var pageTrack *http.Response
@@ -229,7 +230,7 @@ func main() {
 		logError(err)
 		if pageTrack == nil {
 			// do nothing
-		} else if page.Request.URL.Path == pageTrack.Request.URL.Path || x == 20 {
+		} else if page.Request.URL.Path == pageTrack.Request.URL.Path || x == 10000 {
 			break
 		}
 		link = link0 + "/" + strconv.Itoa(x)
