@@ -1,8 +1,7 @@
 /*
-This package is ultimately designed to take a Nairaland link and output
-a pdf document showing the posts, likes, comments etc.
+This program is designed to take a Nairaland thread link and output
+a pdf document showing the posts on the thread, along with their metadata.
 */
-// This current version takes in the link and writes the webpage as an html file
 
 package main
 
@@ -208,17 +207,18 @@ func main() {
 	var link string
 	var buf bytes.Buffer
     w := io.Writer(&buf)
-    fmt.Println("***********************************************")
-    fmt.Println("              Program Begins")
-    fmt.Println("***********************************************")
+    fmt.Println("***************************************************************************************")
+    fmt.Println("                                  PROGRAM BEGINS")
+    fmt.Println("***************************************************************************************")
 	fmt.Println("Enter the link to be processed below (to process a default link, just press Enter) ")
 	fmt.Print("Link >>> ")
 	fmt.Scanf("%s", &link)
 	if link == "" {
 		link = "https://www.nairaland.com/7229653/court-orders-upward-review-judges"
 	}
-	fmt.Println("***********************************************")
-	fmt.Println("Fetching web pages...")
+	fmt.Println("***************************************************************************************")
+	fmt.Println("Retrieving web pages...")
+	fmt.Println("***************************************************************************************")
 	link0 := link
 	var page *http.Response
 	var pageTrack *http.Response
@@ -228,6 +228,8 @@ func main() {
 	for {
 		page, err = http.Get(link)
 		logError(err)
+		fmt.Println("The HTTP request for", page.Request.URL.Path, "was successful!")
+		fmt.Println("***************************************************************************************")
 		if pageTrack == nil {
 			// do nothing
 		} else if page.Request.URL.Path == pageTrack.Request.URL.Path || x == 10000 {
@@ -241,15 +243,15 @@ func main() {
 	for i, wpage := range pages {
 		pagetext, err := ioutil.ReadAll(wpage.Body)
 		logError(err)
-		fmt.Println("The link", wpage.Request.URL.Path, "was successfully processed!")
+		fmt.Println("The content of the webpage at", wpage.Request.URL.Path, "was successfully retrieved!")
 		err = ioutil.WriteFile("webpage.html", pagetext, 0644)
 		logError(err)
 		text := string(pagetext)
 		doc, err := html.Parse(strings.NewReader(text))
 		logError(err)
 		procNode(doc)
-		fmt.Println("[The existing webpage indexed -", i+1, "was successfully parsed!]")
-		fmt.Println("***********************************************")
+		fmt.Println("[The retrieved webpage indexed -", i+1, "was successfully parsed!]")
+		fmt.Println("***************************************************************************************")
 		wpage.Body.Close()
 	}
 	page.Body.Close()
@@ -266,14 +268,16 @@ func main() {
 	err = ioutil.WriteFile("new-nairaland-page.html", []byte(buf.String()), 0644)
 	logError(err)
 	fmt.Println("An html version of the new webpage was saved as 'new-nairaland-page.html' in the current working directory!")
+	fmt.Println("***************************************************************************************")
 	fmt.Println("Generating PDF version (this may take a while)...")
+	fmt.Println("***************************************************************************************")
 	config.Default.Secret = "Uhy0MidCpF8ZmoUT"
 	convertapi.ConvDef("html", "pdf",
 		param.NewPath("File", "new-nairaland-page.html", nil)).ToPath("new-nairaland-page.pdf")
 	fmt.Println("The PDF presentation of the webpage was successfully generated, and saved as 'new-nairaland-page.pdf' in the current working directory!")
-	fmt.Println("***********************************************")
-    fmt.Println("              Program Ends")
-	fmt.Println("***********************************************")
+	fmt.Println("***************************************************************************************")
+    fmt.Println("                                   PROGRAM ENDS")
+	fmt.Println("***************************************************************************************")
 }
 
 func logError(err error) {
